@@ -6,10 +6,14 @@ Thanks to the [Mitro team](https://github.com/mitro-co/mitro) for their awesome 
 
 ## Instructions
 
-1. Run ```./build-libs.sh```. The source files will be downloaded automatically
-2. If all libs have been generated under ```./build/universal```, run ```./build-framework.sh```
+* I'm lazy:
+  1. Download the [compiled framework](/lazy/keyczar.framework.zip)
 
-A framework file will be created under ```./build/framework```.
+* I want to compile from source:
+  1. Run ```./build-libs.sh```. The source files will be downloaded automatically
+  2. If all libs have been generated under ```./build/universal```, run ```./build-framework.sh```
+
+  A framework file will be created under ```./build/framework```.
 
 ## Usage
 Once the framework is built, add it to your Xcode project along with [zlib](https://gist.github.com/dulaccc/75f1f49f53e544cef549)
