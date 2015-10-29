@@ -6,12 +6,12 @@ Thanks to the [Mitro team](https://github.com/mitro-co/mitro) for their awesome 
 
 ## Instructions
 
-* I'm lazy:
-  Download the [compiled framework](/lazy/keyczar.framework.zip)
+* I'm lazy:  
+   Download the [compiled framework](/lazy/keyczar.framework.zip)
 
-* I want to compile from source:
-  Run ```./build-libs.sh```. The source files will be downloaded and patched automatically. Check the log files for errors under ```/build/logs```
-  A framework file will be created under ```./build/framework```.
+* I want to compile from source:  
+   Run ```./build-libs.sh```. The source files will be downloaded and patched automatically. Check the log files for errors under ```/build/logs```  
+   A framework file will be created under ```./build/framework```.
 
 ## Usage
 Once the framework is built, add it to your Xcode project along with [zlib](https://gist.github.com/dulaccc/75f1f49f53e544cef549)
@@ -25,7 +25,7 @@ Once the framework is built, add it to your Xcode project along with [zlib](http
 ![Setting file as c++](/instructions/mm_file.png)
 
 3. Import Keyczar's header file and use:
-```
+```objective-c
 #import <keyczar/keyczar.h>
 ```
 ```objective-c
