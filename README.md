@@ -1,4 +1,4 @@
-# Keyczar-ios
+# Keyczar-iOS
 An iOS-compatible version of Google's Keyczar library
 
 ## Acknowledgements
