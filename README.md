@@ -7,12 +7,10 @@ Thanks to the [Mitro team](https://github.com/mitro-co/mitro) for their awesome 
 ## Instructions
 
 * I'm lazy:
-  1. Download the [compiled framework](/lazy/keyczar.framework.zip)
+  Download the [compiled framework](/lazy/keyczar.framework.zip)
 
 * I want to compile from source:
-  1. Run ```./build-libs.sh```. The source files will be downloaded automatically
-  2. If all libs have been generated under ```./build/universal```, run ```./build-framework.sh```
-
+  Run ```./build-libs.sh```. The source files will be downloaded and patched automatically. Check the log files for errors under ```/build/logs```
   A framework file will be created under ```./build/framework```.
 
 ## Usage
