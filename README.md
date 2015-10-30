@@ -31,25 +31,25 @@ Once the framework is built, add it to your Xcode project along with [zlib](http
 ```objective-c
 - (void) doSomething {
 
-NSString* path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"aes"];
-keyczar::Keyczar* crypter = keyczar::Crypter::Read([path UTF8String]);
-if (!crypter)
-return;
-
-std::string input = "Secret message";
-std::string ciphertext;
-cout << "Plaintext: " << input << endl;
-
-bool result = crypter->Encrypt(input, &ciphertext);
-if (result) {
-std::cout << "Ciphertext (Base64w): " << ciphertext << std::endl;
-std::string decrypted_input;
-bool result = crypter->Decrypt(ciphertext, &decrypted_input);
-if (result)
-assert(input == decrypted_input);
-std::cout << "Deciphered: " << decrypted_input;
-}
-delete crypter;
-
+   NSString* path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"aes"];
+   keyczar::Keyczar* crypter = keyczar::Crypter::Read([path UTF8String]);
+   if (!crypter)
+      return;
+   
+   std::string input = "Secret message";
+   std::string ciphertext;
+   cout << "Plaintext: " << input << endl;
+   
+   bool result = crypter->Encrypt(input, &ciphertext);
+   if (result) {
+      std::cout << "Ciphertext (Base64w): " << ciphertext << std::endl;
+      std::string decrypted_input;
+      crypter->Decrypt(ciphertext, &decrypted_input);
+      assert(input == decrypted_input);
+      std::cout << "Deciphered: " << decrypted_input;
+   }
+   
+   delete crypter;
+   
 }
 ```
