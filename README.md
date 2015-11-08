@@ -18,11 +18,11 @@ Once the framework is built, add it to your Xcode project along with [zlib](http
 
 1. Make sure your target links with the frameworks;
 
-![Link with frameworks](/instructions/link_binaries.png)
+   ![Link with frameworks](/instructions/link_binaries.png)
 
 2. Keyczar is a C++ library, and so any class that interacts with it must be written in Objective-C++. To do this, rename your .m file to .mm:
 
-![Setting file as c++](/instructions/mm_file.png)
+   ![Setting file as c++](/instructions/mm_file.png)
 
 3. Import Keyczar's header file and use:
 ```objective-c
