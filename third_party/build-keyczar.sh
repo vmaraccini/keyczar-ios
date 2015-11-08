@@ -33,6 +33,7 @@ if [ ! -e ${KEYCZAR_SRC_DIR} ]; then
   patch -p1 < "${PATCH_DIR}/keyczar-ios.patch"
   popd
   patch -p1 < "${PATCH_DIR}/keyczar-arm64.patch"
+  patch -p1 < "${PATCH_DIR}/keyczar_in_memory_keystore.patch"
 
 fi
 
